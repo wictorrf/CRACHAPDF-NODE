@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+        }
+		.impressao{
+			/*height: 21cm;
+			width: 29.7cm;*/
+			
+			padding: .5cm;
+			background-color: #EEE;
+			display: inline-block;
+		}
+
+		.impressao_verso{
+			/*height: 21cm;
+			width: 29.7cm;*/
+			/* margin-left: .5cm; */
+			padding: .5cm;
+			background-color: #EEE;
+			display: inline-block;
+			position: absolute;
+		}
+		.abertura{
+			height: .3cm;
+			width: 1.5cm;
+			
+			margin-left: 4cm;
+			border-radius: .5cm;
+			background-color: #FFF;
+		}
+        /* /paginas/ */
+		.cracha, .cracha_verso{
+			width: 9.9cm;
+			height: 15cm;
+			margin: 0;
+			text-align: center;
+			font-family: arial;
+			background-color: #777;
+		}
+
+		.abertura_verso{
+			height: .3cm;
+			width: 1.5cm;
+			margin-left: 4cm;
+			border-radius: .5cm;
+			
+			background-color: #FFF;
+		}
+		.cracha-header{
+			height: 5cm;
+			padding-top: .5cm;
+			text-align: center;
+		}
+		.cracha-header, .shape::before{
+			background-color: #4e515e;
+            color: #dbd7d7;
+		}
+		.shape, .cracha-body{
+			background-color: #1f388a;
+            color: #FFF;
+		}
+		.shape {
+		  	position: relative;
+		    overflow: hidden;
+		    height: 1cm;
+		}
+		.shape::before {
+		  	border-radius: 100%;
+		    position: absolute;
+		    right: -25px;
+		    left: -25px;
+		    top: -100px;
+		    content: '';
+		    bottom: 0;
+		}
+		.cracha-body{
+			height: 8cm;
+		    padding-top: .5cm;
+		    text-align: left;
+		    padding-left: .5cm;
+		    padding-right: .5cm;
+		    font-size: 12px;
+		}
+		.cracha-body p{
+			padding-bottom: 0;
+			margin-top: 10px;
+			margin-bottom: .2rem;
+			font-weight: bold;
+
+		}
+		.cracha-body span{
+			padding-left: 10px;
+			font-style: italic;
+			font-weight: unset;
+		}
+		#foto-comerciante{
+			margin-top: .3cm;
+			max-height: 3.3cm;
+			max-width: 3.3cm;
+			border-radius: 5px;
+		}
+		#foto-logo-evento {
+			max-height: 2.5cm;
+    		max-width: 2.5cm;
+			margin-left: -3.5rem;
+    		border-radius: 10px;
+		}
+		#logo-pcr{
+			height: 2.5cm;
+			width: 2.5cm;
+		}
+		#foto-mapa{
+			margin-top: .5cm;
+			height: 4.5cm;
+			width: 7.5cm;
+			border-radius: 10px;
+		}
+		#qr-code{
+			margin-top: .5cm;
+			text-align: center;
+		}
+		#qr-code img{
+			height: 3cm;
+			width: 3cm;
+		}
+		#informacoes{
+			font-size: 10px;
+			text-align: center;
+    		padding: 0 20px;
+		}
+	</style>
+</head>

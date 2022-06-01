@@ -1,0 +1,50 @@
+<%- include('partials/header.ejs') %>
+
+<body>
+    <div id="all" >
+        <div class="impressao">
+            <div class="cracha">
+                <div class="cracha-header">
+                <div class="abertura"></div>
+                <img id="foto-comerciante" src="./winsdev.png" alt="foto logo">
+                <h4 style="margin: 0;text-transform: uppercase;font-size:16px;">Wictor Rafael</h4>
+                <span style="font-size: 12px;">A100</span>
+                </div>
+                <div class="shape"></div>
+                <div class="cracha-body">
+                    <p>PROCESSO: <span><%= idprocesso %> </span></p>
+                    <p>SITUAÇÃO: <span><%= situacao %> </span></p>     
+                    <p>TIPO EQUIPAMENTO: <span><%= tpequipamento %> </span></p>
+                    <p>TAMANHO:	<span><%= tamanho %> </span></p>
+                    <p>ATIVIDADE: <span><%= atividade %> </span></p>
+                    <p>POLO: <span><%= polo %> </span></p>
+                    <p>PERÍODO: De<span><%= periodo %> </span> A <spam><%= periodo2 %> </spam> </p>
+                <div id="qr-code">
+                
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="impressao_verso">
+            <div class="cracha_verso">
+                <div class="cracha-header">
+                <div class="abertura_verso"></div>
+                <h4 style="margin: 0;margin-top:.3cm;font-size: 12px;">EVENTO EMPRESA</h4>
+                <p id="informacoes">
+                Informações referentes ao EVENTO DE TESTE
+                </p>
+                </div>
+                <div class="shape"></div>
+                <div class="cracha-body">
+                    <div style="height: 5.5cm;text-align:center;margin-top:-0.5cm;padding-bottom:0.5cm;">
+                
+                    </div>
+
+                    <div style="padding-top: 6em;float: right;font-size: 10px;">19/05/2022 - 15:35:49</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<%- include('partials/footer.ejs') %>
+
